@@ -1,0 +1,11 @@
+﻿ [
+ {
+    "titulo": "Aprender a programar en C",
+    "autor": "Alfredo Moreno Vozmediano",
+    "anio": "2017",
+    "id": 3,
+    "editorial": "Independently published" ,
+    "paginas": 407,    
+    "resenia": "En este libro encontrarás el 99% de lo que necesitas saber para programar en C explicado de un modo claro y comprensible, desde lo más básico, como la programación estructurada y el pseudocódigo, hasta las cuestiones más peliagudas como los punteros, los ficheros indexados o las estructuras de datos avanzadas." 
+  }
+]

@@ -1,0 +1,11 @@
+﻿ [
+ {
+    "titulo": "Programación Orientada a Objetos",
+    "autor": "Luis Joyanes Aguilar",
+    "anio": "1996",
+    "id": 8,
+    "editorial": "MCGRAW-HILL" ,
+    "paginas": 936,    
+    "resenia": "La segunda edición de Programación orientada a objetos ha reunido la experiencia del autor contenida en la primera edición con el enfoque del nuevo estándar ANSI/ISO C++ así como la biblioteca de plantillas (templates) estándar STL y el nuevo lenguaje de modelado unificado UML." 
+  }
+]
