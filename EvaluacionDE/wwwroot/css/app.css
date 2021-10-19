@@ -47,7 +47,7 @@ app {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #53B527 70%);
 }
 
     .sidebar .top-row {
@@ -183,9 +183,17 @@ app {
 
     .footer {
         position: fixed;
-        bottom: 0px;
-        right: 0px;
-        margin: 0px 7px 6px 0px;
+        bottom: 0;
+        z-index: 999999;
+        width: 100%;
+        text-align: center;        
+        background-color: black;
+    }
+        
+    
+
+    th{
+        background-color: #92D86F;
     }
 
    

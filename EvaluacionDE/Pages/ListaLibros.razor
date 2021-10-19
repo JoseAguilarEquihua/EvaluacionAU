@@ -1,12 +1,11 @@
 ﻿@page "/libros"
 @inject HttpClient Http
 
-<h1>Catálogo de libros</h1>
-<br />
-<br />
-<p>Libros disponibles</p>
-<br />
-<br />
+<div class="jumbotron">
+    <h1>Catálogo de libros</h1> 
+    <p>Libros disponibles</p>
+</div>
+
 @if (libros == null)
 {
     <p><em>Cargando...</em></p>
@@ -30,7 +29,7 @@ else
                     <td class="text-uppercase">@libro.Titulo</td>
                     <td>@libro.Autor</td>
                     <td>@libro.Anio</td>
-                    <td><a href="detalleLibro/@libro.Id">Más información </a></td>
+                    <td><a class="btn btn-primary" href="detalleLibro/@libro.Id" >Más información </a></td>
                 </tr>
 
             }

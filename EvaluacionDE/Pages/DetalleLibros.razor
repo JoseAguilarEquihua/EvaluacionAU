@@ -1,12 +1,15 @@
 ﻿@page "/detalleLibro/{id}"
 @inject HttpClient Http
-<br />
-<br />
-<h1>Información del libro</h1>
-<br />
-<br />
 
-<a href="libros" class="btn btn-danger">Volver al listado de libros</a>
+<div class="jumbotron">
+    <h1>Información del libro</h1>    
+    <p>seleccionado</p>
+</div>
+
+
+
+
+<a href="libros" class="btn btn-danger">Regresar</a>
 
 <br />
 <br />
@@ -18,14 +21,24 @@
 else
 {
     string url = string.Format(@"/img/libro{0}.jpg", id);
+    <div class="container">
+        <div class="row jumbotron">
+            <div class="col col-md-9">
+                <h2>@informacionLibro[0].Titulo</h2>
+                <p><b>Número de páginas:</b> @informacionLibro[0].Paginas</p>
+                <p><b>Autor:</b> @informacionLibro[0].Autor</p>
+                <p><b>Editorial:</b> @informacionLibro[0].Editorial</p>
+                <p><b>Año de publicación:</b> @informacionLibro[0].Anio</p>
+                <p><b>Reseña:</b> @informacionLibro[0].Resenia</p>
+
+            </div>
+            <div class="col col-md-3">
+                <img src="@url" height="350" width="250" />
+            </div>
+        </div>
+</div>
     
-    <p>Título: @informacionLibro[0].Titulo</p>
-    <p>Número de páginas: @informacionLibro[0].Paginas</p>
-    <p>Autor: @informacionLibro[0].Autor</p>
-    <p>Editorial: @informacionLibro[0].Editorial</p>
-    <p>Año de publicación: @informacionLibro[0].Anio</p>
-    <p>Reseña: @informacionLibro[0].Resenia</p>
-    <img src="@url" height="350" width="200"/>
+    
 
 }
 
